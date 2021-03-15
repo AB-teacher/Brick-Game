@@ -143,6 +143,7 @@ function draw(){
     playGame();
   }
   drawSprites();
+
   if(gameState === "over"){
     while(brickArr.length >0){
       var clearBrick = brickArr.pop();
@@ -152,6 +153,8 @@ function draw(){
     paddle.visible = false;
     textSize(30);
     text ("GAME OVER", width/2-40, height/2);
+    
+    
 
   }
   
